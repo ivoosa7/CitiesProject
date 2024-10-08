@@ -20,4 +20,10 @@ export class TableCidadesComponent implements OnInit{
       next: data => this.cidades = data
     });
   }
+
+  delete(cidade:Cidade){
+      this.service.deleteCities(cidade).subscribe({
+        next: () => this.loadCities()
+      })
+  }
 }

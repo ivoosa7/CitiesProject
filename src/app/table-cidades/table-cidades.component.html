@@ -8,6 +8,7 @@
         <th scope="col">População</th>
         <th scope="col">Linguagem</th>
         <th scope="col">Pontos Turísticos</th>
+        <th>Opções</th>
       </tr>
     </thead>
     <tbody>
@@ -18,6 +19,7 @@
         <td scope="row">{{cidade.population}}</td>
         <td scope="row">{{cidade.language}}</td>
         <td scope="row">{{cidade.turism}}</td>
+        <td><button type="button" class="btn btn-danger" (click)="delete(cidade)">Apagar</button></td>
       </tr>
     </tbody>
   </table>
