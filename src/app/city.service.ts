@@ -7,5 +7,10 @@ import { Cidades } from './cidade';
   providedIn: 'root'
 })
 export class CityService {
+  constructor(private http:HttpClient){ }
 
+  url = 'http://localhost:3000/cidades'
+  getCidades(): Observable<Cidades[]>{
+    return this.http.get<Cidades[]>(this.url);
+  }
 }

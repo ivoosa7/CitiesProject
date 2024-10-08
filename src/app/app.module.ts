@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { TableCidadesComponent } from './table-cidades/table-cidades.component';
 import { FormCidadesComponent } from './form-cidades/form-cidades.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgbModule
+    NgbModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
