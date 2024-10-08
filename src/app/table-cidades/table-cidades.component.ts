@@ -16,7 +16,7 @@ export class TableCidadesComponent implements OnInit{
   }
 
   loadCities(){
-    this.service.getCidades().subscribe({
+    this.service.getCities().subscribe({
       next: data => this.cidades = data
     });
   }
