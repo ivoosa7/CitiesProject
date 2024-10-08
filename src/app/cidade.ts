@@ -1,4 +1,4 @@
-export interface Cidades{
+export interface Cidade{
   id: number,
   city: String,
   country: String,

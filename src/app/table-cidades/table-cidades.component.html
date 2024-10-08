@@ -11,13 +11,13 @@
       </tr>
     </thead>
     <tbody>
-      <tr>
-        <th scope="row">1</th>
-        <td>Mark</td>
-        <td>Otto</td>
-        <td></td>
-        <td></td>
-        <td></td>
+      <tr *ngFor="let cidade of cidades">
+        <th scope="row">{{cidade.id}}</th>
+        <td scope="row">{{cidade.city}}</td>
+        <td scope="row">{{cidade.country}}</td>
+        <td scope="row">{{cidade.population}}</td>
+        <td scope="row">{{cidade.language}}</td>
+        <td scope="row">{{cidade.turism}}</td>
       </tr>
     </tbody>
   </table>
