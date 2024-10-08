@@ -1,12 +1,18 @@
 {
 "cidades": [
   {
-    "id": "1",
-    "name": "São Paulo",
-    "state": "São Paulo",
-    "country": "Brasil"
+    "city": "Rio de Janeiro",
+    "country": "Brasil",
+    "population": "6,7 milhões",
+    "language": "Português",
+    "turism": "Cristo Redentor, Pão de Açúcar, Praia de Copacabana"
+  },
+  {
+    "city": "Londres",
+    "country": "Reino Unido",
+    "population": "9 milhões",
+    "language": "Inglês",
+    "turism": "Big Ben, London Eye, Palácio de Buckingham"
   }
-
-
 ]
 }

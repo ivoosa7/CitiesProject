@@ -1,6 +1,8 @@
 export interface Cidades{
   id: number,
-  name: String,
-  state: String,
-  country: String
+  city: String,
+  country: String,
+  population: String,
+  language: String,
+  turism: String
 }
