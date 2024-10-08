@@ -1,3 +1,4 @@
+import { Router } from '@angular/router';
 import { Component, OnInit } from '@angular/core';
 import { Cidade } from '../cidade';
 import { CityService } from '../city.service';
@@ -9,7 +10,8 @@ import { CityService } from '../city.service';
 })
 export class TableCidadesComponent implements OnInit{
   cidades:Cidade [] = [];
-  constructor(private service:CityService){ }
+  constructor(private service:CityService,
+              private router: Router){ }
 
   ngOnInit(): void {
     this.loadCities();
