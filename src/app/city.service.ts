@@ -17,4 +17,5 @@ export class CityService {
   deleteCities(cidade: Cidade): Observable<void>{
     return this.http.delete<void>(`${this.url}/${cidade.id}`);
   }
+
 }

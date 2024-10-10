@@ -1,4 +1,3 @@
-import { CityService } from '../city.service';
 import {  } from './../cidade';
 import { Component, OnInit } from '@angular/core';
 
@@ -7,6 +6,4 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './form-cidades.component.html',
   styleUrl: './form-cidades.component.css'
 })
-export class FormCidadesComponent {
-
-}
+export class FormCidadesComponent { }

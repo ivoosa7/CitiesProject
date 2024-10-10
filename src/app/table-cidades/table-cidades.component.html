@@ -14,7 +14,7 @@
     <tbody>
       <tr *ngFor="let cidade of cidades">
         <th scope="row">{{cidade.id}}</th>
-        <td scope="row"><a [routerLink]="['/cidades', cidade.id]">{{cidade.city}}</a></td>
+        <td scope="row"><a [routerLink]="['/cidade', cidade.id]">{{cidade.city}}</a></td>
         <td scope="row">{{cidade.country}}</td>
         <td scope="row">{{cidade.population}}</td>
         <td scope="row">{{cidade.language}}</td>
