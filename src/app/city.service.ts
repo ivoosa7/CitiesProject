@@ -10,12 +10,19 @@ export class CityService {
   constructor(private http:HttpClient){ }
 
   url = 'http://localhost:3000/cidades'
+
+  //1º Serviço
   getCities(): Observable<Cidade[]>{
     return this.http.get<Cidade[]>(this.url);
   }
 
+  //2º Serviço
   deleteCities(cidade: Cidade): Observable<void>{
     return this.http.delete<void>(`${this.url}/${cidade.id}`);
   }
 
+  //3º Serviço
+  getCitiesById(id:number): Observable<Cidade>{
+    return this.http.get<Cidade>(`${this.url}/${id}`);
+  }
 }
