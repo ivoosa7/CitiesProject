@@ -1,25 +1,45 @@
 <div class="container">
-  <form>
+  <form [formGroup]="formGroupCidade">
     <div class="mb-3">
-      <label for="exampleInputEmail1" class="form-label">Cidade</label>
-      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+      <label for="city" class="form-label">Cidade</label>
+      <input  formControlName="city"
+              type="text"
+              class="form-control"
+              id="city"
+              placeholder="Digite o nome da Cidade">
     </div>
     <div class="mb-3">
-      <label for="exampleInputPassword1" class="form-label">País</label>
-      <input type="password" class="form-control" id="exampleInputPassword1">
+      <label for="country" class="form-label">País</label>
+      <input  formControlName="country"
+              type="text"
+              class="form-control"
+              id="country"
+              placeholder="Digite o nome da País">
     </div>
     <div class="mb-3">
-      <label for="exampleInputPassword1" class="form-label">População</label>
-      <input type="password" class="form-control" id="exampleInputPassword1">
+      <label for="population" class="form-label">População</label>
+      <input  formControlName="population"
+              type="text"
+              class="form-control"
+              id="population"
+              placeholder="Digite o total da população nesta cidade">
     </div>
     <div class="mb-3">
-      <label for="exampleInputPassword1" class="form-label">Idioma</label>
-      <input type="password" class="form-control" id="exampleInputPassword1">
+      <label for="language" class="form-label">Idioma</label>
+      <input  formControlName="language"
+              type="text"
+              class="form-control"
+              id="language"
+              placeholder="Digite o idioma nesta cidade">
     </div>
     <div class="mb-3">
-      <label for="exampleInputPassword1" class="form-label">Pontos Turísticos</label>
-      <input type="password" class="form-control" id="exampleInputPassword1">
+      <label for="turism" class="form-label">Pontos Turísticos</label>
+      <input  formControlName="turism"
+              type="text"
+              class="form-control"
+              id="turism"
+              placeholder="Digite o nome da País">
     </div>
-    <button type="submit" class="btn btn-primary">Submit</button>
+    <button type="submit" class="btn btn-primary">Salvar</button>
   </form>
 </div>
