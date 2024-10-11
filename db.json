@@ -1,20 +1,20 @@
 {
-"cidades": [
-  {
-    "id": 1,
-    "city": "Rio de Janeiro",
-    "country": "Brasil",
-    "population": "6,7 milhões",
-    "language": "Português",
-    "turism": "Cristo Redentor, Pão de Açúcar, Praia de Copacabana"
-  },
-  {
-    "id": 2,
-    "city": "Londres",
-    "country": "Reino Unido",
-    "population": "9 milhões",
-    "language": "Inglês",
-    "turism": "Big Ben, London Eye, Palácio de Buckingham"
-  }
-]
+  "cidades": [
+    {
+      "id": 1,
+      "city": "Rio de Janeiro",
+      "country": "Brasil",
+      "population": "6,7 milhões",
+      "language": "Português",
+      "turism": "Cristo Redentor, Pão de Açúcar, Praia de Copacabana"
+    },
+    {
+      "id": 2,
+      "city": "Londres",
+      "country": "Reino Unido",
+      "population": "9 milhões",
+      "language": "Inglês",
+      "turism": "Big Ben, London Eye, Palácio de Buckingham, Kings Cross"
+    }
+  ]
 }

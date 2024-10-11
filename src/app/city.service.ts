@@ -25,4 +25,9 @@ export class CityService {
   getCitiesById(id:number): Observable<Cidade>{
     return this.http.get<Cidade>(`${this.url}/${id}`);
   }
+
+  //4º Serviço
+  updateCity(cidade: Cidade): Observable<Cidade>{
+    return this.http.put<Cidade>(`${this.url}/${cidade.id}`, cidade);
+  }
 }
