@@ -12,6 +12,7 @@ import { FormBuilder, FormGroup } from '@angular/forms';
 export class FormCidadesComponent implements OnInit{
 
   formGroupCidade: FormGroup;
+  isEditMode: boolean = false;
 
   constructor(private router: Router,
               private activeRouter: ActivatedRoute,
@@ -30,7 +31,11 @@ export class FormCidadesComponent implements OnInit{
 
   ngOnInit() {
     const id = Number(this.activeRouter.snapshot.paramMap.get("id"));
-    this.loadId(id);
+    this.isEditMode = id !== 0;
+    if(id != 0){
+      this.loadId(id);
+    }
+
   }
 
   loadId(id:number){

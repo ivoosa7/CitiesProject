@@ -41,12 +41,14 @@
               placeholder="Digite o nome da País">
     </div>
     <button
+      *ngIf="isEditMode"
       type="submit"
       class="btn btn-primary"
       (click)="updateCity()"
       >Atualizar
     </button>
     <button
+      *ngIf="!isEditMode"
       type="submit"
       class="btn btn-primary"
       (click)="saveCity()"
