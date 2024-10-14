@@ -7,6 +7,7 @@ const routes: Routes = [
   {path: '', redirectTo:'/cidades', pathMatch:'full'},
   {path: 'cidades', component: TableCidadesComponent},
   {path: 'cidade/:id', component: FormCidadesComponent},
+  {path: 'cidade', component: FormCidadesComponent}
 ];
 
 @NgModule({
