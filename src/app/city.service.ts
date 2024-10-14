@@ -30,4 +30,9 @@ export class CityService {
   updateCity(cidade: Cidade): Observable<Cidade>{
     return this.http.put<Cidade>(`${this.url}/${cidade.id}`, cidade);
   }
+
+  //5º Serviço
+  save(cidade: Cidade): Observable<Cidade>{
+    return this.http.post<Cidade>(this.url, cidade);
+  }
 }
