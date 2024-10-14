@@ -43,8 +43,13 @@ export class FormCidadesComponent implements OnInit{
   updateCity(){
     this.service.updateCity(this.formGroupCidade.value).subscribe({
       next: () => this.router.navigate(['cidades'])
-    })
+    });
   }
 
+  saveCity(){
+    this.service.saveCity(this.formGroupCidade.value).subscribe({
+      next: () => this.router.navigate(['cidades'])
+    });
+  }
 
 }

@@ -32,7 +32,7 @@ export class CityService {
   }
 
   //5º Serviço
-  save(cidade: Cidade): Observable<Cidade>{
+  saveCity(cidade: Cidade): Observable<Cidade>{
     return this.http.post<Cidade>(this.url, cidade);
   }
 }
