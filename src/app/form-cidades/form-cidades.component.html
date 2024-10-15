@@ -34,11 +34,21 @@
     </div>
     <div class="mb-3">
       <label for="turism" class="form-label">Pontos Turísticos</label>
-      <input  formControlName="turism"
+      <select
+              *ngIf="isEditMode"
+              class="form-select" aria-label="Default select example">
+              <option selected>Open this select menu</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+      </select>
+      <input
+              *ngIf="!isEditMode"
+              formControlName="turism"
               type="text"
               class="form-control"
               id="turism"
-              placeholder="Digite o nome da País">
+              placeholder="Digite pontos turisticos da cidade">
     </div>
     <button
       *ngIf="isEditMode"
