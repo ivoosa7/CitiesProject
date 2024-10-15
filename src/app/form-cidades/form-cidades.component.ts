@@ -13,6 +13,8 @@ export class FormCidadesComponent implements OnInit{
 
   formGroupCidade: FormGroup;
   isEditMode: boolean = false;
+  turismOptions: String[] = [];
+  cityId: number | undefined;
 
   constructor(private router: Router,
               private activeRouter: ActivatedRoute,
@@ -36,6 +38,14 @@ export class FormCidadesComponent implements OnInit{
       this.loadId(id);
     }
 
+    //Para poder separar as opções cadastradas de tursimo
+    this.cityId = +this.activeRouter.snapshot.paramMap.get('id')!;
+
+    if (this.cityId) {
+      this.service.getCitiesById(this.cityId).subscribe(cidade => {
+        this.turismOptions = cidade.turism.split(',').map(item => item.trim());
+      })
+    }
   }
 
   loadId(id:number){

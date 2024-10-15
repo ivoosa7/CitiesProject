@@ -29,7 +29,4 @@ export class TableCidadesComponent implements OnInit{
       })
   }
 
-  createNewCities(){
-    this.router.navigate(['cidade'])
-  }
 }
